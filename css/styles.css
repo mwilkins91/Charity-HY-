@@ -527,6 +527,11 @@ section.urgentCause button {
   margin: 0 auto;
 }
 
+.wrapperBottomHalf {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .wrapperMax {
   max-width: 1400px;
   margin: 0 auto;
@@ -576,4 +581,18 @@ button {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.causePanels {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cause {
+  width: 33.33333%;
+}
+
+.cause figure, .cause img {
+  max-width: 100%;
 }
