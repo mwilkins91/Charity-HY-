@@ -1,0 +1,154 @@
+@import "partials/variables";
+@import "partials/setup";
+@import "partials/fixedHeader";
+@import "partials/heroTitle";
+@import "partials/subHero";
+.wrapper {
+	max-width: 695px;
+	margin: 0 auto;
+}
+
+.wrapperMax {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+button {
+	background: none;
+	border: 1px solid white;
+	padding: 10px 35px;
+	font-size: 1.1rem;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: $fontSkinny;
+}
+
+.blackBold {
+	font-family: $fontThick;
+	font-weight: bold;
+}
+
+.overlay {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 60px 0;
+	height: 100%;
+}
+
+section.urgentCause {
+	
+	background: url('../Assets/images/bigger hands.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.overlay {
+		background: rgba(255,255,255,0.9);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	button{
+		color: $softBlack;
+		border: 1px solid $softBlack;
+		font-size: 1rem;
+		padding: 8px 10px;
+	}
+}
+	.topGraph {
+		display: flex;
+		font-family: $fontSkinny;
+		text-transform: uppercase;
+		color: $softBlack;
+		font-weight: lighter;
+		padding-top: 15px;
+		img {
+			max-width: 100%;
+		}
+		h2 {
+			width: 33.3333%;
+			font-size: 4rem;
+			font-weight: lighter;
+			text-align: right;
+			line-height: 3.8rem;
+			align-self: center;
+		}
+		ul {
+			width: 33.3333%;
+			list-style: none;
+			padding: 0;
+			align-self: center;
+		}
+	}
+
+.topGraph p {
+	font-size: 2rem;
+	line-height: 1.8rem;
+	text-transform: capitalize;
+}
+
+.topGraph .graph {
+	width: calc(33.3333% - 40px);
+	margin:20px;
+	position: relative;
+	.red {
+		color: $brandRed;
+	}
+	.graphText {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		p {
+			margin: 0;
+			text-align: center;
+		}
+		p:first-child {
+			font-size: 6rem;
+			position: relative;
+		}
+		p:last-child {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			position: relative;
+			top: 2rem;
+		}
+	}
+}
+
+.bottomQuote {
+	text-align: center;
+	font-family: $fontSkinny;
+	color: $softBlack;
+	font-size: 1.6rem;
+	margin-top: 60px;
+	p {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		line-height: 3rem;
+	}
+	i {
+		color: $brandRed;
+		position: absolute;
+	}
+	i:first-child {
+		left: -10px;
+	}
+	i:last-child {
+		right: -10px;
+	}
+	cite {
+		margin-top: 2rem;
+		text-transform: uppercase;
+		font-style: normal;
+		letter-spacing: 2px;
+		font-size: 1rem;
+		display: block;
+		.red {
+			color: red;
+		}
+	}
+}

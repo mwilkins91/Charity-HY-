@@ -1,0 +1,66 @@
+header.fixedHeader {
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 25px;
+}
+.navHamburger {
+	position: relative;
+	ul {
+		z-index: 900;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: fixed;
+		top: 50%;
+		transition: left 0.5s ease-out;
+		left: 0;
+		&.hidden {
+			left: -200px;
+		}
+		li {
+			padding: 10px;
+			background: white;
+		}
+	}
+	button {
+		background: none;
+		border: none;
+		font-size: 1.5rem;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: 10px;
+		color: $softBlack;
+	}
+}
+// .fixedHeader:hover .navHamburger ul {
+// 	left:0;
+// }
+.logo {
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 0;
+	span {
+		font-weight: bold;
+	}
+	.logoHeartImg {
+		display: inline-block;
+		background: white url('../Assets/logo.png')  center center no-repeat;
+		background-size: contain;
+		width: 80px;
+		height: 50px;
+		vertical-align: middle;
+	}
+}
+
+.navSocials ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	li a{
+		padding: 5px 10px;
+	}
+}

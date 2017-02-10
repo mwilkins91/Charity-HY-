@@ -1,0 +1,1 @@
+This is my second project for the HackerYou bootcamp, a one page responsive site based on a PSD template. 
