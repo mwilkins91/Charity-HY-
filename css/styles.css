@@ -775,7 +775,95 @@ div.causeInfo button {
           justify-content: space-between;
 }
 
+.buyTheme p {
+  font-family: "Raleway", sans-serif;
+  color: #4B4B4B;
+  margin: 45px 0;
+}
+
+.buyTheme p, .buyTheme span.bigRed {
+  font-size: 1.9rem;
+}
+
 .buyTheme button {
   color: grey;
   border-color: grey;
+  max-height: 35px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.blog {
+  background: url("../Assets/images/small hands.jpg");
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.blog h2 {
+  color: white;
+}
+
+.blogGallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fourSmallImg {
+  width: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogSmallImg {
+  width: calc(50% - 10px);
+  background: white;
+  margin-bottom: 20px;
+}
+
+.blogSmallImg img {
+  max-width: 100%;
+}
+
+.blogSmallImg figcaption {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.blogSmallImg figcaption i {
+  color: #D8382C;
+}
+
+.blogLargeImg {
+  width: calc(50% - 20px);
+  background: white;
+  margin-bottom: 20px;
+}
+
+.blogLargeImg img {
+  max-width: 100%;
 }
