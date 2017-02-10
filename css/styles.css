@@ -176,6 +176,7 @@ header.fixedHeader {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 25px;
+  position: relative;
 }
 
 .navHamburger {
@@ -221,6 +222,13 @@ header.fixedHeader {
   text-align: center;
   letter-spacing: 2px;
   margin: 0;
+  color: #4B4B4B;
+  position: absolute;
+  left: calc(50% - 3px);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .logo span {
@@ -308,7 +316,7 @@ nav.navTopOfPageStatic ul p, nav.navTopOfPageStatic ul a {
 }
 
 .heroTitle h2 .whiteSkinny {
-  font-weight: lighter;
+  font-weight: 200;
   font-family: "Raleway", sans-serif;
 }
 
@@ -548,9 +556,28 @@ button {
   font-family: "Raleway", sans-serif;
 }
 
+.heading {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #4B4B4B;
+}
+
+footer {
+  position: relative;
+}
+
 .blackBold {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+}
+
+.bigRed {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 3.7rem;
+  color: #D8382C;
 }
 
 .overlay {
@@ -574,6 +601,20 @@ button {
           align-items: center;
 }
 
+.recentCauses a, .recentCauses p {
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: grey;
+  margin: 0;
+}
+
+.recentCauses nav {
+  width: 140%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
 .recentCauses nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -581,6 +622,25 @@ button {
   list-style: none;
   padding: 0;
   margin: 0;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recentCauses nav ul li {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.recentCauses nav ul li:first-child {
+  width: 70%;
+}
+
+.recentCauses h2 {
+  margin-top: 50px;
+  font-size: 4.5rem;
+  margin-bottom: 0;
 }
 
 .causePanels {
@@ -590,9 +650,101 @@ button {
 }
 
 .cause {
-  width: 33.33333%;
+  width: calc(33.33333% - 20px);
+  margin: 0 10px;
 }
 
-.cause figure, .cause img {
-  max-width: 100%;
+.cause figure {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+}
+
+.cause figure img {
+  min-height: 100%;
+  max-width: 150%;
+  position: relative;
+  left: -30%;
+}
+
+.cause figure figcaption {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cause3 figure img {
+  max-width: 200%;
+  left: -51%;
+}
+
+div.causeInfo {
+  border: 1px solid lightgrey;
+  text-align: center;
+}
+
+div.causeInfo p {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+div.causeInfo .money p.blackBold {
+  margin-top: 0;
+}
+
+div.causeInfo p:first-child {
+  margin: 20px 0 10px;
+}
+
+div.causeInfo button {
+  color: grey;
+  border-color: grey;
+}
+
+.money {
+  position: relative;
+  font-size: 2.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.money .relativeSpan {
+  position: relative;
+}
+
+.money p {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  color: #464646;
+}
+
+.money .below {
+  position: absolute;
+  bottom: -10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  color: grey;
+  font-weight: normal;
+}
+
+.money .below--left {
+  left: 1.5rem;
+}
+
+.money .below--right {
+  right: 1.7rem;
+}
+
+.money .moneyOf {
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 5px;
 }

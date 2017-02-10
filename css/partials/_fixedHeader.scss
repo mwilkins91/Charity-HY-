@@ -3,6 +3,7 @@ header.fixedHeader {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 25px;
+	position: relative;
 }
 .navHamburger {
 	position: relative;
@@ -43,6 +44,11 @@ header.fixedHeader {
 	text-align: center;
 	letter-spacing: 2px;
 	margin: 0;
+	color: $softBlack;
+	position: absolute;
+	left: calc(50% - 3px);
+	top: 50%;
+	transform: translate(-50%,-50%);
 	span {
 		font-weight: bold;
 	}
