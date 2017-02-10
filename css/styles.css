@@ -124,8 +124,6 @@ input[type=checkbox], input[type=radio] {
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -162,8 +160,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -173,8 +169,12 @@ html {
 
 header.fixedHeader {
   background: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 25px;
 }
 
@@ -208,7 +208,9 @@ header.fixedHeader {
   font-size: 1.5rem;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin-left: 10px;
   color: #4B4B4B;
 }
@@ -235,6 +237,8 @@ header.fixedHeader {
 }
 
 .navSocials ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
@@ -256,8 +260,12 @@ nav.navTopOfPageStatic {
 }
 
 nav.navTopOfPageStatic ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   padding: 0;
 }
@@ -284,7 +292,9 @@ nav.navTopOfPageStatic ul p, nav.navTopOfPageStatic ul a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -313,6 +323,8 @@ nav.navTopOfPageStatic ul p, nav.navTopOfPageStatic ul a {
 }
 
 section.subHeaderBoxes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -365,41 +377,6 @@ section.subHeaderBoxes .colouredBox1, section.subHeaderBoxes .colouredBox2, sect
   background-repeat: no-repeat;
 }
 
-.wrapper {
-  max-width: 695px;
-  margin: 0 auto;
-}
-
-.wrapperMax {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-button {
-  background: none;
-  border: 1px solid white;
-  padding: 10px 35px;
-  font-size: 1.1rem;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-}
-
-.blackBold {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-
-.overlay {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 60px 0;
-  height: 100%;
-}
-
 section.urgentCause {
   background: url("../Assets/images/bigger hands.jpg");
   background-position: center;
@@ -409,9 +386,15 @@ section.urgentCause {
 
 section.urgentCause .overlay {
   background: rgba(255, 255, 255, 0.9);
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.urgentCause button {
@@ -422,6 +405,8 @@ section.urgentCause button {
 }
 
 .topGraph {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -440,14 +425,18 @@ section.urgentCause button {
   font-weight: lighter;
   text-align: right;
   line-height: 3.8rem;
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .topGraph ul {
   width: 33.3333%;
   list-style: none;
   padding: 0;
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .topGraph p {
@@ -470,7 +459,9 @@ section.urgentCause button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .topGraph .graph .graphText p {
@@ -529,4 +520,60 @@ section.urgentCause button {
 
 .bottomQuote cite .red {
   color: red;
+}
+
+.wrapper {
+  max-width: 695px;
+  margin: 0 auto;
+}
+
+.wrapperMax {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  border: 1px solid white;
+  padding: 10px 35px;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+}
+
+.blackBold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 60px 0;
+  height: 100%;
+}
+
+.recentCauses {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recentCauses nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
