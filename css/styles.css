@@ -167,6 +167,65 @@ html {
   font-size: 62.5%;
 }
 
+.wrapper {
+  max-width: 695px;
+  margin: 0 auto;
+}
+
+.wrapperBottomHalf {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.wrapperMax {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  border: 1px solid white;
+  padding: 10px 35px;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #4B4B4B;
+}
+
+footer {
+  position: relative;
+}
+
+.blackBold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.bigRed {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 3.7rem;
+  color: #D8382C;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 60px 0;
+  height: 100%;
+}
+
 header.fixedHeader {
   background: white;
   display: -webkit-flex;
@@ -530,65 +589,6 @@ section.urgentCause button {
   color: red;
 }
 
-.wrapper {
-  max-width: 695px;
-  margin: 0 auto;
-}
-
-.wrapperBottomHalf {
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.wrapperMax {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-button {
-  background: none;
-  border: 1px solid white;
-  padding: 10px 35px;
-  font-size: 1.1rem;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-}
-
-.heading {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: lighter;
-  color: #4B4B4B;
-}
-
-footer {
-  position: relative;
-}
-
-.blackBold {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-
-.bigRed {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bolder;
-  font-size: 3.7rem;
-  color: #D8382C;
-}
-
-.overlay {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 60px 0;
-  height: 100%;
-}
-
 .recentCauses {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -695,6 +695,7 @@ div.causeInfo p {
 
 div.causeInfo .money p.blackBold {
   margin-top: 0;
+  font-size: 2.5rem;
 }
 
 div.causeInfo p:first-child {
@@ -704,11 +705,11 @@ div.causeInfo p:first-child {
 div.causeInfo button {
   color: grey;
   border-color: grey;
+  margin-top: 20px;
 }
 
 .money {
   position: relative;
-  font-size: 2.5rem;
   width: 85%;
   margin: 0 auto;
 }
@@ -734,7 +735,7 @@ div.causeInfo button {
 }
 
 .money .below--left {
-  left: 1.5rem;
+  left: 1rem;
 }
 
 .money .below--right {
@@ -747,4 +748,34 @@ div.causeInfo button {
   font-size: 1.5rem;
   font-weight: normal;
   margin: 0 5px;
+}
+
+.imgBar {
+  margin-top: 80px;
+}
+
+.imgBar .flickity-prev-next-button {
+  background: none;
+}
+
+.imgBar .flickity-prev-next-button .arrow {
+  fill: lightgrey;
+}
+
+.imgBar img {
+  max-width: 25%;
+}
+
+.buyTheme {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buyTheme button {
+  color: grey;
+  border-color: grey;
 }

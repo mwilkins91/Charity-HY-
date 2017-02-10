@@ -1,0 +1,58 @@
+.wrapper {
+	max-width: 695px;
+	margin: 0 auto;
+}
+
+.wrapperBottomHalf {
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.wrapperMax {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+button {
+	background: none;
+	border: 1px solid white;
+	padding: 10px 35px;
+	font-size: 1.1rem;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: $fontSkinny;
+}
+
+.heading {
+	font-family: $fontSkinny;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: lighter;
+	color: $softBlack;
+}
+
+footer {
+	position: relative;
+}
+
+.blackBold {
+	font-family: $fontThick;
+	font-weight: bold;
+}
+
+.bigRed {
+	font-family: $fontThick;
+	font-weight: bolder;
+	font-size: 3.7rem;
+	color: $brandRed;
+}
+
+.overlay {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 60px 0;
+	height: 100%;
+}

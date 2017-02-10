@@ -1,196 +1,36 @@
 @import "partials/variables";
 @import "partials/setup";
+@import "partials/globals";
 @import "partials/fixedHeader";
 @import "partials/heroTitle";
 @import "partials/subHero";
 @import "partials/_graphQuote.scss";
-.wrapper {
-	max-width: 695px;
-	margin: 0 auto;
+@import "partials/recentCauses";
+
+
+
+//Next
+.imgBar {
+	margin-top: 80px;
+	.flickity-prev-next-button  {
+		background: none;
+		.arrow{
+			fill: lightgrey;
+		}
+	}
+	img{
+		max-width: 25%;
+	}
 }
 
-.wrapperBottomHalf {
-	max-width: 850px;
-	margin: 0 auto;
-}
-
-.wrapperMax {
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
-button {
-	background: none;
-	border: 1px solid white;
-	padding: 10px 35px;
-	font-size: 1.1rem;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-family: $fontSkinny;
-}
-
-.heading {
-	font-family: $fontSkinny;
-	text-transform: uppercase;
-	font-size: 4rem;
-	font-weight: lighter;
-	color: $softBlack;
-}
-
-footer {
-	position: relative;
-}
-
-.blackBold {
-	font-family: $fontThick;
-	font-weight: bold;
-}
-
-.bigRed {
-	font-family: $fontThick;
-	font-weight: bolder;
-	font-size: 3.7rem;
-	color: $brandRed;
-}
-
-.overlay {
-	position: relative;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	padding: 60px 0;
-	height: 100%;
-}
-
-.recentCauses {
+.buyTheme {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.recentCauses a, .recentCauses p {
-	letter-spacing: 2px;
-	font-family: $fontSkinny;
-	text-decoration: none;
-	color: grey;
-	margin: 0;
-	}
-
-.recentCauses nav {
-	width: 140%;
-	margin-top: 5px;
-	margin-bottom: 30px;
-	ul {
-		display: flex;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		justify-content: space-between;
-		li {
-			width: 100%;
-			text-align: center;
-			text-transform: uppercase;
-			&:first-child {
-				width: 70%;
-			}
-		}
-	}
-}
-.recentCauses h2 {
-	margin-top: 50px;
-	font-size: 4.5rem;
-	margin-bottom: 0;
-}
-.causePanels {
-	display: flex;
-}
-.cause {
-	width: calc(33.33333% - 20px);
-	margin: 0 10px;
-	figure{
-		position: relative;
-		overflow: hidden;
-		height: 260px;
-		 img {
-			min-height: 100%;
-			max-width: 150%;
-			position: relative;
-			left: -30%;
-		}
-		figcaption {
-			position: absolute;
-			bottom: 10%;
-			color: white;
-			font-size: 2rem;
-			font-weight: bold;
-			width: 100%;
-			text-align: center;
-			font-family: $fontThick;
-		}
-	}
-}
-.cause3 figure img{
-	max-width: 200%;
-	left: -51%;
-}
-
-div.causeInfo {
-	border: 1px solid lightgrey;
-	text-align: center;
-	p {
-		letter-spacing: 1px;
-		font-size: 1.2rem;
-	}
-	.money p.blackBold {
-		margin-top: 0;
-	}
-	p:first-child {
-		margin: 20px 0 10px;
-	}
+	justify-content: space-between;
 	button {
 		color: grey;
 		border-color: grey;
 	}
 }
-.money {
-	position: relative;
-	font-size: 2.5rem;
-	width: 85%;
-	margin: 0 auto;
-	.relativeSpan {
-		position: relative;
-	}
-	p {
-		font-family: $fontThick;
-		letter-spacing: 1px;
-		color: darken($softBlack, 2);
-	}
-	.below {
-		position: absolute;
-		bottom: -10px;
-		font-size: 1rem;
-		text-transform: uppercase;
-		letter-spacing: normal;
-		color:grey;
-		font-weight: normal;
-	}
-	.below--left {
-		left: 1.5rem;
-	}
-	.below--right {
-		right: 1.7rem;
-	}
-	.moneyOf {
-		font-family: "Georgia";
-		font-style: italic;
-		font-size: 1.5rem;
-		font-weight: normal;
-		margin: 0 5px;
-	}
-
-}
-
-
 
 
 
