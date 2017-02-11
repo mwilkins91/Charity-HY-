@@ -1,0 +1,67 @@
+
+.blog {
+	background: url('../Assets/images/small hands.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	h2 {
+		color: white;
+		margin-top: 70px;
+	}
+	button {
+		margin-bottom: 70px;
+	}
+	figcaption {
+		display: flex;
+		justify-content: space-around;
+		p {
+			width: 100%;
+			margin: 0;
+			padding: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+			color: grey;
+		}
+		p:not(:last-child) {
+			border-right: 1px solid lightgrey;
+		}
+		i {
+			font-size: 1.4rem;
+			color: $brandRed;
+			margin-right: 6px;
+		}
+	}
+}
+.blogGallery {
+	display: flex;
+	justify-content: space-between;
+}
+.fourSmallImg {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.blogSmallImg {
+	width: calc(50% - 10px);
+	background: white;
+	margin-bottom: 20px;
+	img{
+		max-width: 100%;
+		min-height: 135px;
+		display: block;
+	}
+	
+}
+.blogLargeImg {
+	width: calc(50% - 20px);
+	background: white;
+	margin-bottom: 20px;
+	img{
+		max-width: 100%;
+	}
+
+}

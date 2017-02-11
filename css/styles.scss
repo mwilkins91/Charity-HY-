@@ -6,88 +6,19 @@
 @import "partials/subHero";
 @import "partials/_graphQuote.scss";
 @import "partials/recentCauses";
+@import "partials/shame";
+@import "partials/blogSection";
 
-
-
-//Next
-.imgBar {
-	margin-top: 80px;
-	.flickity-prev-next-button  {
-		background: none;
-		.arrow{
-			fill: lightgrey;
-		}
-	}
-	img{
-		max-width: 25%;
-	}
-}
-
-.buyTheme {
+section.threeInfoPanes {
 	display: flex;
-	justify-content: space-between;
-	p {
-		font-family: $fontSkinny;
-		color: $softBlack;
-		margin: 45px 0;
-	}
-	p, span.bigRed {
-		font-size: 1.9rem;
-	}
-	button {
-		color: grey;
-		border-color: grey;
-		max-height: 35px;
-		align-self: center;
-	}
 }
-
-.blog {
-	background: url('../Assets/images/small hands.jpg');
+.infoPane {
+	width: 33.333333333%;
+	text-align: center;
+}
+.infoPane3 {
+	background: url("../Assets/images/banner.jpg");
 	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	h2 {
-		color: white;
-	}
 }
-.blogGallery {
-	display: flex;
-	justify-content: space-between;
-}
-.fourSmallImg {
-	width: 50%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.blogSmallImg {
-	width: calc(50% - 10px);
-	background: white;
-	margin-bottom: 20px;
-	img{
-		max-width: 100%;
-	}
-	figcaption {
-		display: flex;
-		justify-content: space-around;
-		i {
-			color: $brandRed;
-		}
-	}
-}
-.blogLargeImg {
-	width: calc(50% - 20px);
-	background: white;
-	margin-bottom: 20px;
-
-	img{
-		max-width: 100%;
-	}
-}
-
-
 
 

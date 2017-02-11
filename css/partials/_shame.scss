@@ -1,0 +1,57 @@
+.imgBar {
+	margin-top: 80px;
+	.flickity-prev-next-button  {
+		background: none;
+		.arrow{
+			fill: lightgrey;
+		}
+	}
+	img{
+		max-width: 25%;
+	}
+}
+
+.buyTheme {
+	display: flex;
+	justify-content: space-between;
+	p {
+		font-family: $fontSkinny;
+		color: $softBlack;
+		margin: 45px 0;
+	}
+	p, span.bigRed {
+		font-size: 1.9rem;
+	}
+	button {
+		color: grey;
+		border-color: grey;
+		max-height: 35px;
+		align-self: center;
+	}
+}
+
+.statusBar {
+	display: flex;
+	padding: 40px 0;
+	background: linear-gradient(to right, $brandBlue 0%, $brandRed 100%);
+	.statusBarQuarter {
+		width: 25%;
+		* {
+			text-align: center;
+			margin: 0 auto;
+		}
+		img {
+			width: 45px;
+			display: block;
+		}
+		p.bigRed {
+			color: white;
+			margin: 10px 0;
+		}
+		p:last-child {
+			color: $softBlack;
+			font-family: $fontSkinny;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -794,6 +794,39 @@ div.causeInfo button {
           align-self: center;
 }
 
+.statusBar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+  background: linear-gradient(to right, #339ED4 0%, #D8382C 100%);
+}
+
+.statusBar .statusBarQuarter {
+  width: 25%;
+}
+
+.statusBar .statusBarQuarter * {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.statusBar .statusBarQuarter img {
+  width: 45px;
+  display: block;
+}
+
+.statusBar .statusBarQuarter p.bigRed {
+  color: white;
+  margin: 10px 0;
+}
+
+.statusBar .statusBarQuarter p:last-child {
+  color: #4B4B4B;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
 .blog {
   background: url("../Assets/images/small hands.jpg");
   background-size: cover;
@@ -811,6 +844,40 @@ div.causeInfo button {
 
 .blog h2 {
   color: white;
+  margin-top: 70px;
+}
+
+.blog button {
+  margin-bottom: 70px;
+}
+
+.blog figcaption {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.blog figcaption p {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.blog figcaption p:not(:last-child) {
+  border-right: 1px solid lightgrey;
+}
+
+.blog figcaption i {
+  font-size: 1.4rem;
+  color: #D8382C;
+  margin-right: 6px;
 }
 
 .blogGallery {
@@ -843,19 +910,8 @@ div.causeInfo button {
 
 .blogSmallImg img {
   max-width: 100%;
-}
-
-.blogSmallImg figcaption {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.blogSmallImg figcaption i {
-  color: #D8382C;
+  min-height: 135px;
+  display: block;
 }
 
 .blogLargeImg {
@@ -866,4 +922,20 @@ div.causeInfo button {
 
 .blogLargeImg img {
   max-width: 100%;
+}
+
+section.threeInfoPanes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoPane {
+  width: 33.333333333%;
+  text-align: center;
+}
+
+.infoPane3 {
+  background: url("../Assets/images/banner.jpg");
+  background-size: cover;
 }
