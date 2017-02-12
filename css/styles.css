@@ -288,6 +288,7 @@ header.fixedHeader {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-size: 2rem;
 }
 
 .logo span {
@@ -928,14 +929,120 @@ section.threeInfoPanes {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
 }
 
 .infoPane {
-  width: 33.333333333%;
+  width: calc(33.333333333% - 25px);
+  text-align: center;
+}
+
+.infoPane h2.heading {
+  margin-top: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.infoPane h2.heading .blackBold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.infoPane button {
+  color: grey;
+  border-color: grey;
+  width: 100%;
+}
+
+.infoPane1 {
+  text-align: left;
+}
+
+.infoPane1 ul {
+  list-style-type: circle;
+  list-style: none;
+  padding: 0 25px;
+}
+
+.infoPane1 li {
+  position: relative;
+  border-top: 1px solid lightgrey;
+}
+
+.infoPane1 li:last-child {
+  border-bottom: 1px solid lightgrey;
+}
+
+.infoPane1 li::before {
+  font-family: Fontawesome;
+  content: "\f10c";
+  color: #D8382C;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+}
+
+.infoPane2 ul {
+  padding: 0;
+  list-style: none;
+}
+
+.infoPane2 button {
+  position: relative;
+  padding: 8px 0px 8px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.infoPane2 button:after {
+  content: '>';
+  background: #D8382C;
+  position: absolute;
+  color: white;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  padding: 6px 0;
+  font-size: 1.1rem;
   text-align: center;
 }
 
 .infoPane3 {
   background: url("../Assets/images/banner.jpg");
   background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.infoPane3 h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+}
+
+.infoPane3 h2 .red {
+  color: #D8382C;
+}
+
+.infoPane3 button {
+  width: 50%;
+  color: white;
+  border-color: white;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
