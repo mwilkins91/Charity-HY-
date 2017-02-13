@@ -123,6 +123,17 @@ div.causeInfo {
 		font-size: 1.5rem;
 		font-weight: normal;
 		margin: 0 5px;
+		position: relative;
+		&:after {
+			content: '';
+			width: 40px;
+			border-bottom: 1px solid lighten(lightgrey, 10);
+			position: absolute;
+			top: 60%;
+			left: 65%;
+			transform: translate(-50%, -50%) rotate(-70deg);
+
+		}
 	}
 
 }

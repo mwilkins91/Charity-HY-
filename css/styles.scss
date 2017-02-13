@@ -14,6 +14,7 @@ section.getInTouch {
 
 	background: url('../Assets/images/GoogleMapimage.jpg');
 	background-size: cover;
+	margin-top: 80px;
 	.overlay {
 		background: rgba(255,255,255,0.8);
 		display: flex;
@@ -21,15 +22,59 @@ section.getInTouch {
 		justify-content: center;
 	}
 	h2 {
-		padding-top: 80px;
+		padding-top: 0;
 		padding-bottom: 40px;
 	}
 	form {
 		display: flex;
+		flex-wrap: wrap;
+		background: white;
+		width: 100%;
+		justify-content: center;
+		padding: 40px;
+		position: relative;
+		top: 100px;
+		z-index: 200;
 		.formLeft {
 			display: flex;
 			flex-direction: column;
-			
+			justify-content: space-between;
+			width: calc(50% - 10px);
+			margin-right: 10px;
+		}
+		textarea {
+			width: calc(50% - 10px);
+			margin-left: 10px;
+		}
+		input:not([type="submit"]){
+			padding: 8px;
+
+		}
+		input[type="submit"] {
+			border-color: $softBlack;
+			color: $softBlack;
+			padding: 10px 45px;
+			margin-top: 20px;
+		}
+		input[type="email"], input.username, input.website {
+			background-image: url("../Assets/mail-small.png");
+			background-repeat: no-repeat;
+			background-position: 5% center;
+			border: 1px lightgray solid;
+		}
+		input.username {
+			background-image: url("../Assets/person-small.png");
+		}
+		input.website {
+			background-image: url("../Assets/earth-small.png");
+		}
+		textarea {
+			background-image: url("../Assets/pencil-small.png");
+			background-repeat: no-repeat;
+			background-position: 1% 5%;
+			padding-left: 5%;
+			border: 1px lightgray solid;
+
 		}
 	}
 }
@@ -38,10 +83,60 @@ section.getInTouch {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: -60px;
 	width: 100%;
+	font-family: $fontThick;
+	color: grey;
+	font-size: 1.4rem;
 	.contactMethod {
 		width: 100%;
 	}
 }
 
+
+
+footer {
+	background: $softBlack;
+	// input[type="{
+		
+	// }
+	.subscribe {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 75px 0;
+		input[type="email"] {
+			border: none;
+			text-align: center;
+			width: 250px;
+			font-size: 1.1rem;
+			padding: 8px;
+			margin-bottom: 15px;
+			margin-top: 40px;
+		}
+		input[type="submit"] {
+			color: lightgrey;
+			border-color: lightgrey;
+		}
+	}
+	.logo {
+		position: 	static;	
+		color: white;
+		transform: initial;
+		.logoHeartImg {
+			background-color: $softBlack;
+		}
+	}
+}
+.copyright {
+	background: darken($softBlack, 10);
+	p {
+		color: grey;
+		padding: 50px 0;
+		font-size: 1.2rem;
+		text-align: center;
+		img {
+			height: 1rem;
+		}
+	}
+}

@@ -182,7 +182,7 @@ html {
   margin: 0 auto;
 }
 
-button {
+button, input[type="submit"] {
   background: none;
   border: 1px solid white;
   padding: 10px 35px;
@@ -749,6 +749,19 @@ div.causeInfo button {
   font-size: 1.5rem;
   font-weight: normal;
   margin: 0 5px;
+  position: relative;
+}
+
+.money .moneyOf:after {
+  content: '';
+  width: 40px;
+  border-bottom: 1px solid #ececec;
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%) rotate(-70deg);
+      -ms-transform: translate(-50%, -50%) rotate(-70deg);
+          transform: translate(-50%, -50%) rotate(-70deg);
 }
 
 .imgBar {
@@ -1079,6 +1092,7 @@ section.threeInfoPanes {
 section.getInTouch {
   background: url("../Assets/images/GoogleMapimage.jpg");
   background-size: cover;
+  margin-top: 80px;
 }
 
 section.getInTouch .overlay {
@@ -1095,7 +1109,7 @@ section.getInTouch .overlay {
 }
 
 section.getInTouch h2 {
-  padding-top: 80px;
+  padding-top: 0;
   padding-bottom: 40px;
 }
 
@@ -1103,6 +1117,18 @@ section.getInTouch form {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background: white;
+  width: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  position: relative;
+  top: 100px;
+  z-index: 200;
 }
 
 section.getInTouch form .formLeft {
@@ -1112,6 +1138,50 @@ section.getInTouch form .formLeft {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
+
+section.getInTouch form textarea {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+}
+
+section.getInTouch form input:not([type="submit"]) {
+  padding: 8px;
+}
+
+section.getInTouch form input[type="submit"] {
+  border-color: #4B4B4B;
+  color: #4B4B4B;
+  padding: 10px 45px;
+  margin-top: 20px;
+}
+
+section.getInTouch form input[type="email"], section.getInTouch form input.username, section.getInTouch form input.website {
+  background-image: url("../Assets/mail-small.png");
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  border: 1px lightgray solid;
+}
+
+section.getInTouch form input.username {
+  background-image: url("../Assets/person-small.png");
+}
+
+section.getInTouch form input.website {
+  background-image: url("../Assets/earth-small.png");
+}
+
+section.getInTouch form textarea {
+  background-image: url("../Assets/pencil-small.png");
+  background-repeat: no-repeat;
+  background-position: 1% 5%;
+  padding-left: 5%;
+  border: 1px lightgray solid;
 }
 
 .threeContactMethods {
@@ -1122,10 +1192,72 @@ section.getInTouch form .formLeft {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: -60px;
   width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+  font-size: 1.4rem;
 }
 
 .threeContactMethods .contactMethod {
   width: 100%;
+}
+
+footer {
+  background: #4B4B4B;
+}
+
+footer .subscribe {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 75px 0;
+}
+
+footer .subscribe input[type="email"] {
+  border: none;
+  text-align: center;
+  width: 250px;
+  font-size: 1.1rem;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+footer .subscribe input[type="submit"] {
+  color: lightgrey;
+  border-color: lightgrey;
+}
+
+footer .logo {
+  position: static;
+  color: white;
+  -webkit-transform: initial;
+      -ms-transform: initial;
+          transform: initial;
+}
+
+footer .logo .logoHeartImg {
+  background-color: #4B4B4B;
+}
+
+.copyright {
+  background: #323232;
+}
+
+.copyright p {
+  color: grey;
+  padding: 50px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.copyright p img {
+  height: 1rem;
 }
