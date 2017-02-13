@@ -5,17 +5,17 @@
 
 	.overlay {
 		background: linear-gradient(to right, rgba(72, 92, 101, 0.9) 0%, rgba(102, 74, 71, 0.9) 100%);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 70px 0;
+		@media all and (max-width: 940px){
+			padding: 10px 0 40px;
+		}
 	}
 	h2 {
 		color: white;
-		margin-top: 70px;
-	}
-	button {
-		margin-bottom: 70px;
 	}
 	figcaption {
 		display: flex;
@@ -42,12 +42,19 @@
 .blogGallery {
 	display: flex;
 	justify-content: space-between;
+	@media all and (max-width: 940px){
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .fourSmallImg {
 	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	@media all and (max-width: 940px){
+		width: 90%;
+	}
 }
 .blogSmallImg {
 	width: calc(50% - 10px);
@@ -57,6 +64,9 @@
 		max-width: 100%;
 		min-height: 135px;
 		display: block;
+		@media all and (max-width: 940px){
+			min-height: 248px;
+		}
 	}
 	
 }
@@ -64,6 +74,10 @@
 	width: calc(50% - 20px);
 	background: white;
 	margin-bottom: 20px;
+	@media all and (max-width: 940px){
+		width: 90%;
+
+	}
 	figcaption {
 		border-bottom: 1px solid lightgrey;
 	}

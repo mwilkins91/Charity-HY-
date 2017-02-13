@@ -323,6 +323,13 @@ header.fixedHeader {
   position: relative;
 }
 
+@media all and (max-width: 768px) {
+  .topOfPageHeader {
+    background-position: center bottom;
+    background-size: auto 100%;
+  }
+}
+
 .topOfPageHeader .overlay {
   background: linear-gradient(to right, rgba(72, 92, 101, 0.6) 0%, rgba(102, 74, 71, 0.6) 100%);
 }
@@ -398,6 +405,17 @@ section.subHeaderBoxes {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media all and (max-width: 768px) {
+  section.subHeaderBoxes {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 section.subHeaderBoxes .colouredBox {
@@ -609,6 +627,12 @@ section.urgentCause button {
           align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  .recentCauses {
+    display: block;
+  }
+}
+
 .recentCauses a, .recentCauses p {
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
@@ -621,6 +645,12 @@ section.urgentCause button {
   width: 140%;
   margin-top: 5px;
   margin-bottom: 30px;
+}
+
+@media all and (max-width: 768px) {
+  .recentCauses nav {
+    width: 100%;
+  }
 }
 
 .recentCauses nav ul {
@@ -651,15 +681,39 @@ section.urgentCause button {
   margin-bottom: 0;
 }
 
+@media all and (max-width: 768px) {
+  .recentCauses h2 {
+    text-align: center;
+  }
+}
+
 .causePanels {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media all and (max-width: 768px) {
+  .causePanels {
+    display: block;
+  }
+  .causePanels:after {
+    content: 'flickity';
+    display: none;
+    /* hide :after */
+  }
+}
+
 .cause {
   width: calc(33.33333% - 20px);
   margin: 0 10px;
+}
+
+@media all and (max-width: 768px) {
+  .cause {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 .cause figure {
@@ -785,12 +839,26 @@ div.causeInfo button {
   background: none;
 }
 
+.imgBar .flickity-prev-next-button:hover {
+  background: none;
+}
+
 .imgBar .flickity-prev-next-button .arrow {
   fill: lightgrey;
 }
 
+.imgBar .flickity-prev-next-button .arrow:hover {
+  fill: white;
+}
+
 .imgBar img {
   max-width: 25%;
+}
+
+@media all and (max-width: 940px) {
+  .imgBar img {
+    max-width: 50%;
+  }
 }
 
 .buyTheme {
@@ -800,6 +868,18 @@ div.causeInfo button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .buyTheme {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px;
+  }
 }
 
 .buyTheme p {
@@ -871,15 +951,17 @@ div.causeInfo button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 70px 0;
+}
+
+@media all and (max-width: 940px) {
+  .blog .overlay {
+    padding: 10px 0 40px;
+  }
 }
 
 .blog h2 {
   color: white;
-  margin-top: 70px;
-}
-
-.blog button {
-  margin-bottom: 70px;
 }
 
 .blog figcaption {
@@ -920,6 +1002,17 @@ div.causeInfo button {
           justify-content: space-between;
 }
 
+@media all and (max-width: 940px) {
+  .blogGallery {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .fourSmallImg {
   width: 50%;
   display: -webkit-flex;
@@ -931,6 +1024,12 @@ div.causeInfo button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media all and (max-width: 940px) {
+  .fourSmallImg {
+    width: 90%;
+  }
 }
 
 .blogSmallImg {
@@ -945,10 +1044,22 @@ div.causeInfo button {
   display: block;
 }
 
+@media all and (max-width: 940px) {
+  .blogSmallImg img {
+    min-height: 248px;
+  }
+}
+
 .blogLargeImg {
   width: calc(50% - 20px);
   background: white;
   margin-bottom: 20px;
+}
+
+@media all and (max-width: 940px) {
+  .blogLargeImg {
+    width: 90%;
+  }
 }
 
 .blogLargeImg figcaption {
@@ -996,15 +1107,40 @@ section.threeInfoPanes {
   min-height: 318px;
 }
 
+@media all and (max-width: 768px) {
+  section.threeInfoPanes {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .infoPane {
   width: calc(33.333333333% - 25px);
   text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  .infoPane {
+    width: 98%;
+    margin: 40px 0;
+  }
 }
 
 .infoPane h2.heading {
   margin-top: 0;
   font-size: 2rem;
   text-transform: capitalize;
+  text-align: left;
+}
+
+@media all and (max-width: 768px) {
+  .infoPane h2.heading {
+    text-align: center;
+  }
 }
 
 .infoPane h2.heading .blackBold {
@@ -1022,10 +1158,23 @@ section.threeInfoPanes {
   text-align: left;
 }
 
+@media all and (max-width: 768px) {
+  .infoPane1 p.listPreamble {
+    text-align: center;
+  }
+}
+
 .infoPane1 ul {
   list-style-type: circle;
   list-style: none;
   padding: 0 25px;
+}
+
+@media all and (max-width: 768px) {
+  .infoPane1 ul {
+    max-width: 400px;
+    margin: 40px auto;
+  }
 }
 
 .infoPane1 li {
@@ -1065,6 +1214,12 @@ section.threeInfoPanes {
   margin: 5px 0;
 }
 
+@media all and (max-width: 768px) {
+  .infoPane2 button {
+    max-width: 400px;
+  }
+}
+
 .infoPane2 button .accordianIcon {
   background: #D8382C;
   position: absolute;
@@ -1096,6 +1251,13 @@ section.threeInfoPanes {
   display: none;
 }
 
+@media all and (max-width: 768px) {
+  .accordianItem p {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 .accordianItem p.active {
   display: block;
 }
@@ -1103,6 +1265,13 @@ section.threeInfoPanes {
 .infoPane3 {
   background: url("../Assets/images/banner.jpg");
   background-size: cover;
+}
+
+@media all and (max-width: 768px) {
+  .infoPane3 {
+    width: 68%;
+    margin: 10px 0;
+  }
 }
 
 .infoPane3 .overlay {
@@ -1129,6 +1298,12 @@ section.threeInfoPanes {
 
 .infoPane3 h2 .red {
   color: #D8382C;
+}
+
+@media all and (max-width: 768px) {
+  .infoPane3 h2 {
+    margin-top: 300px;
+  }
 }
 
 .infoPane3 button {

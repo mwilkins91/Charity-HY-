@@ -24,4 +24,12 @@ $(function(){
 
 		}
 	});
+
+		var options = {
+			watchCSS: true,
+			initialIndex: 1,
+			wrapAround: true
+		};
+		$('.carousel').flickity(options);
+		
 })

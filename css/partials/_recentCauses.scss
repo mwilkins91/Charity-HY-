@@ -2,6 +2,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media all and (max-width: 768px){
+		display: block;
+	}
 }
 .recentCauses a, .recentCauses p {
 	letter-spacing: 2px;
@@ -15,6 +18,9 @@
 	width: 140%;
 	margin-top: 5px;
 	margin-bottom: 30px;
+	@media all and (max-width: 768px){
+		width: 100%;
+	}
 	ul {
 		display: flex;
 		list-style: none;
@@ -35,13 +41,27 @@
 	margin-top: 50px;
 	font-size: 4.5rem;
 	margin-bottom: 0;
+	@media all and (max-width: 768px){
+		text-align: center;
+	}
 }
 .causePanels {
 	display: flex;
+	@media all and (max-width: 768px){
+		display: block;
+		&:after {
+			content: 'flickity';
+			display: none; /* hide :after */
+		}
+	}
 }
 .cause {
 	width: calc(33.33333% - 20px);
 	margin: 0 10px;
+	@media all and (max-width: 768px){
+		width: 100%;
+		max-width: 400px;
+	}
 	figure{
 		position: relative;
 		overflow: hidden;

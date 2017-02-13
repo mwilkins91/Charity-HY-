@@ -3,14 +3,26 @@ section.threeInfoPanes {
 	justify-content: space-between;
 	margin-top: 80px;
 	min-height: 318px;
+	@media all and (max-width: 768px){
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .infoPane {
 	width: calc(33.333333333% - 25px);
 	text-align: center;
+	@media all and (max-width: 768px){
+		width: 98%;
+		margin: 40px 0;
+	}
 	h2.heading {
 		margin-top: 0;
 		font-size: 2rem;
 		text-transform: capitalize;
+		text-align: left;
+		@media all and (max-width: 768px){
+			text-align: center;
+		}
 		.blackBold {
 			font-family: $fontSkinny;
 			font-weight: 800;
@@ -24,17 +36,25 @@ section.threeInfoPanes {
 }
 .infoPane1 {
 	text-align: left;
+	@media all and (max-width: 768px){
+		p.listPreamble {
+			text-align: center;
+		}
+	}
 	ul {
 		list-style-type: circle;
 		list-style: none;
-		padding: 0 25px
+		padding: 0 25px;
+		@media all and (max-width: 768px){
+			max-width: 400px;
+			margin: 40px auto;
+		}
 	}
 	li {
 		position: relative;
 		border-top: 1px solid lightgrey;
 		&:last-child {
 		border-bottom: 1px solid lightgrey;
-
 		}
 	}
 	li::before {
@@ -45,7 +65,6 @@ section.threeInfoPanes {
 		left: -20px;
 		top: 35%;
 		font-size: 1rem;
-		// transform: translateY(-50%);
 	}
 	li p {
 		margin: 5px 0;
@@ -63,6 +82,9 @@ section.threeInfoPanes {
 		text-align: left;
 		font-size: 1rem;
 		margin: 5px 0;
+		@media all and (max-width: 768px){
+			max-width: 400px;
+		}
 		.accordianIcon {
 			background: $brandRed;
 			position: absolute;
@@ -89,6 +111,10 @@ section.threeInfoPanes {
 }
 .accordianItem p{
 	display: none;
+	@media all and (max-width: 768px){
+		max-width: 400px;
+		margin: 0 auto;
+	}
 }
 .accordianItem p.active {
 	display: block;
@@ -96,7 +122,10 @@ section.threeInfoPanes {
 .infoPane3 {
 	background: url("../Assets/images/banner.jpg");
 	background-size: cover;
-	
+	@media all and (max-width: 768px){
+		width: 68%;
+		margin:10px 0;
+	}
 	.overlay {
 	display: flex;
 	flex-direction: column;
@@ -112,6 +141,9 @@ section.threeInfoPanes {
 		line-height: 2.8rem;
 		.red {
 			color: $brandRed;
+		}
+		@media all and (max-width: 768px){
+			margin-top: 300px;	
 		}
 	}
 	button {

@@ -1,5 +1,9 @@
 section.subHeaderBoxes {
 	display: flex;
+	@media all and (max-width: 768px){
+	flex-direction: column;
+	align-items: center;
+	}
 	.colouredBox {
 		width: 33.333333%;
 		text-align: center;
