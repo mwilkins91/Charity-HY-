@@ -238,6 +238,16 @@ header.fixedHeader {
   position: relative;
 }
 
+@media all and (max-width: 550px) {
+  header.fixedHeader {
+    padding: 10px;
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    top: 0;
+  }
+}
+
 .navHamburger {
   position: relative;
 }
@@ -275,6 +285,12 @@ header.fixedHeader {
   color: #4B4B4B;
 }
 
+@media all and (min-width: 550px) {
+  .navHamburger button {
+    display: none;
+  }
+}
+
 .logo {
   text-transform: uppercase;
   font-weight: lighter;
@@ -291,6 +307,12 @@ header.fixedHeader {
   font-size: 2rem;
 }
 
+@media all and (max-width: 550px) {
+  .logo {
+    font-size: 1.7rem;
+  }
+}
+
 .logo span {
   font-weight: bold;
 }
@@ -302,6 +324,13 @@ header.fixedHeader {
   width: 80px;
   height: 50px;
   vertical-align: middle;
+}
+
+@media all and (max-width: 550px) {
+  .logo .logoHeartImg {
+    width: 30px;
+    height: 20px;
+  }
 }
 
 .navSocials ul {
@@ -327,6 +356,15 @@ header.fixedHeader {
   .topOfPageHeader {
     background-position: center bottom;
     background-size: auto 100%;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .topOfPageHeader {
+    background-position: 70% bottom;
+    background-size: auto 100%;
+    height: 100vh;
   }
 }
 
@@ -336,6 +374,12 @@ header.fixedHeader {
 
 nav.navTopOfPageStatic {
   background: #323232;
+}
+
+@media all and (min-width: 550px) {
+  nav.navTopOfPageStatic {
+    display: none;
+  }
 }
 
 nav.navTopOfPageStatic ul {
@@ -505,6 +549,17 @@ section.urgentCause button {
   padding-top: 15px;
 }
 
+@media all and (max-width: 550px) {
+  .topGraph {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .topGraph img {
   max-width: 100%;
 }
@@ -520,6 +575,13 @@ section.urgentCause button {
           align-self: center;
 }
 
+@media all and (max-width: 550px) {
+  .topGraph h2 {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 .topGraph ul {
   width: 33.3333%;
   list-style: none;
@@ -527,6 +589,13 @@ section.urgentCause button {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+}
+
+@media all and (max-width: 550px) {
+  .topGraph ul {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .topGraph p {
@@ -539,6 +608,12 @@ section.urgentCause button {
   width: calc(33.3333% - 40px);
   margin: 20px;
   position: relative;
+}
+
+@media all and (max-width: 550px) {
+  .topGraph .graph {
+    width: 50%;
+  }
 }
 
 .topGraph .graph .red {
@@ -584,6 +659,12 @@ section.urgentCause button {
   width: 80%;
   margin: 0 auto;
   line-height: 3rem;
+}
+
+@media all and (max-width: 550px) {
+  .bottomQuote p {
+    padding: 0 10px;
+  }
 }
 
 .bottomQuote .quote {
@@ -701,6 +782,18 @@ section.urgentCause button {
     content: 'flickity';
     display: none;
     /* hide :after */
+  }
+  .causePanels .flickity-prev-next-button {
+    background: none;
+  }
+  .causePanels .flickity-prev-next-button:hover {
+    background: none;
+  }
+  .causePanels .flickity-prev-next-button .arrow {
+    fill: lightgrey;
+  }
+  .causePanels .flickity-prev-next-button .arrow:hover {
+    fill: white;
   }
 }
 
@@ -861,6 +954,12 @@ div.causeInfo button {
   }
 }
 
+@media all and (max-width: 550px) {
+  .imgBar img {
+    max-width: 100%;
+  }
+}
+
 .buyTheme {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -879,6 +978,13 @@ div.causeInfo button {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .buyTheme {
+    padding: 40px 30px;
+    text-align: center;
   }
 }
 
@@ -926,6 +1032,12 @@ div.causeInfo button {
 .statusBar .statusBarQuarter p.bigRed {
   color: white;
   margin: 10px 0;
+}
+
+@media all and (max-width: 562px) {
+  .statusBar .statusBarQuarter p.bigRed {
+    font-size: 2rem;
+  }
 }
 
 .statusBar .statusBarQuarter p:last-child {
@@ -1040,14 +1152,16 @@ div.causeInfo button {
 
 .blogSmallImg img {
   max-width: 100%;
-  min-height: 135px;
+  min-height: 100%;
   display: block;
 }
 
-@media all and (max-width: 940px) {
-  .blogSmallImg img {
-    min-height: 248px;
-  }
+.blogSmallImg .overflowImg {
+  overflow: hidden;
+}
+
+.blogSmallImg .overflowImg img {
+  max-width: 119%;
 }
 
 .blogLargeImg {
@@ -1274,6 +1388,13 @@ section.threeInfoPanes {
   }
 }
 
+@media all and (max-width: 768px) {
+  .infoPane3 {
+    width: 98%;
+    margin: 10px 0;
+  }
+}
+
 .infoPane3 .overlay {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1357,6 +1478,17 @@ section.getInTouch form {
   z-index: 200;
 }
 
+@media all and (max-width: 768px) {
+  section.getInTouch form {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 section.getInTouch form .formLeft {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1371,12 +1503,32 @@ section.getInTouch form .formLeft {
   margin-right: 10px;
 }
 
+@media all and (max-width: 768px) {
+  section.getInTouch form .formLeft {
+    margin: 0;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  section.getInTouch form .formLeft {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 section.getInTouch form input:not([type="submit"]), section.getInTouch form textarea {
   padding: 10px;
   padding-left: 10%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   color: #4B4B4B;
+}
+
+@media all and (max-width: 550px) {
+  section.getInTouch form input:not([type="submit"]), section.getInTouch form textarea {
+    padding-left: 15%;
+  }
 }
 
 section.getInTouch form input[type="submit"] {
@@ -1411,6 +1563,22 @@ section.getInTouch form textarea {
   margin-left: 10px;
 }
 
+@media all and (max-width: 768px) {
+  section.getInTouch form textarea {
+    margin: 0;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  section.getInTouch form textarea {
+    margin: 0;
+    width: 100%;
+    padding-left: 15%;
+    background-position: 5% 5%;
+  }
+}
+
 .threeContactMethods {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1426,8 +1594,25 @@ section.getInTouch form textarea {
   font-size: 1.4rem;
 }
 
+@media all and (max-width: 550px) {
+  .threeContactMethods {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .threeContactMethods .contactMethod {
   width: 100%;
+}
+
+@media all and (max-width: 550px) {
+  .threeContactMethods .contactMethod {
+    margin: 15px 0;
+  }
+  .threeContactMethods .contactMethod:first-child {
+    margin: 0;
+  }
 }
 
 footer {

@@ -4,6 +4,14 @@ header.fixedHeader {
 	justify-content: space-between;
 	padding: 20px 25px;
 	position: relative;
+	@media all and (max-width: 550px){
+		padding: 10px;
+		position: fixed;
+		z-index: 500;
+		width: 100%;
+		top: 0;
+
+	}
 }
 .navHamburger {
 	position: relative;
@@ -33,6 +41,9 @@ header.fixedHeader {
 		transform: translateY(-50%);
 		margin-left: 10px;
 		color: $softBlack;
+		@media all and (min-width: 550px){
+			display: none;
+		}
 	}
 }
 // .fixedHeader:hover .navHamburger ul {
@@ -50,6 +61,9 @@ header.fixedHeader {
 	top: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 2rem;
+	@media all and (max-width: 550px){
+		font-size: 1.7rem;
+	}
 	span {
 		font-weight: bold;
 	}
@@ -60,6 +74,10 @@ header.fixedHeader {
 		width: 80px;
 		height: 50px;
 		vertical-align: middle;
+		@media all and (max-width: 550px){
+			width: 30px;
+			height: 20px;
+		}
 	}
 }
 

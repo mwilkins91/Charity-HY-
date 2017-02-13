@@ -24,6 +24,10 @@ section.urgentCause {
 		color: $softBlack;
 		font-weight: lighter;
 		padding-top: 15px;
+		@media all and (max-width: 550px){
+			flex-direction: column;
+			align-items: center;
+		}
 		img {
 			max-width: 100%;
 		}
@@ -34,12 +38,20 @@ section.urgentCause {
 			text-align: right;
 			line-height: 3.8rem;
 			align-self: center;
+			@media all and (max-width: 550px){
+				width: 80%;
+				text-align: center;
+			}
 		}
 		ul {
 			width: 33.3333%;
 			list-style: none;
 			padding: 0;
 			align-self: center;
+			@media all and (max-width: 550px){
+				width: 80%;
+				text-align: center;
+			}
 		}
 	}
 
@@ -53,6 +65,9 @@ section.urgentCause {
 	width: calc(33.3333% - 40px);
 	margin:20px;
 	position: relative;
+	@media all and (max-width: 550px){
+		width: 50%;
+	}
 	.red {
 		color: $brandRed;
 	}
@@ -89,6 +104,9 @@ section.urgentCause {
 		width: 80%;
 		margin: 0 auto;
 		line-height: 3rem;
+		@media all and (max-width: 550px){
+			padding: 0 10px;
+		}
 	}
 	.quote {
 		color: $brandRed;

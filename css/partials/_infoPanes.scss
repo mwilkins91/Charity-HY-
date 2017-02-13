@@ -126,6 +126,10 @@ section.threeInfoPanes {
 		width: 68%;
 		margin:10px 0;
 	}
+	@media all and (max-width: 768px){
+		width: 98%;
+		margin:10px 0;
+	}
 	.overlay {
 	display: flex;
 	flex-direction: column;

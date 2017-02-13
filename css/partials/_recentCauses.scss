@@ -53,6 +53,18 @@
 			content: 'flickity';
 			display: none; /* hide :after */
 		}
+		.flickity-prev-next-button  {
+			background: none;
+			&:hover {
+				background: none;
+			}
+			.arrow{
+				fill: lightgrey;
+				&:hover {
+					fill: white;
+				}
+			}
+		}
 	}
 }
 .cause {

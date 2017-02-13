@@ -62,13 +62,17 @@
 	margin-bottom: 20px;
 	img{
 		max-width: 100%;
-		min-height: 135px;
+		min-height: 100%;
 		display: block;
-		@media all and (max-width: 940px){
-			min-height: 248px;
+
+	}
+	.overflowImg {
+		overflow: hidden;
+		img {
+
+			max-width: 119%;
 		}
 	}
-	
 }
 .blogLargeImg {
 	width: calc(50% - 20px);
