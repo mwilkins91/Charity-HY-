@@ -42,12 +42,13 @@ section.getInTouch {
 			width: calc(50% - 10px);
 			margin-right: 10px;
 		}
-		textarea {
-			width: calc(50% - 10px);
-			margin-left: 10px;
-		}
-		input:not([type="submit"]){
-			padding: 8px;
+
+		input:not([type="submit"]), textarea{
+			padding: 10px;
+			padding-left: 10%;
+			font-family: $fontThick;
+			font-size: 1.2rem;
+			color: $softBlack;
 
 		}
 		input[type="submit"] {
@@ -74,7 +75,8 @@ section.getInTouch {
 			background-position: 1% 5%;
 			padding-left: 5%;
 			border: 1px lightgray solid;
-
+			width: calc(50% - 10px);
+			margin-left: 10px;
 		}
 	}
 }

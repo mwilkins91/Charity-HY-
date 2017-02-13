@@ -72,10 +72,12 @@
 				</li>
 			</ul><!-- black grey nav at top of page goes here -->
 		</nav>
-		<div class="heroTitle wrapper">
-			<p>Help Needy People</p>
-			<h2><span class="redBold">Charity</span> <span class="whiteBold">Is</span> <span class="whiteSkinny">Willingly Given</span> <span class="whiteBold">From Heart</span></h2>
-			<button>Join Us</button>
+		<div class="overlay">
+			<div class="heroTitle wrapper">
+				<p>Help Needy People</p>
+				<h2><span class="redBold">Charity</span> <span class="whiteBold">Is</span> <span class="whiteSkinny">Willingly Given</span> <span class="whiteBold">From Heart</span></h2>
+				<button>Join Us</button>
+			</div>
 		</div>
 	</header>
 	<section class="subHeaderBoxes wrapperMax">
@@ -126,7 +128,7 @@
 			</div>
 			<button>View Details</button>
 			<blockquote class="bottomQuote wrapper">
-<!--TODO: change FA for &#8220; --><p><i class="fa fa-quote-left"></i><i class="fa fa-quote-right"></i>Sed ut perspiciatis unde omste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+<!--TODO: change FA for &#8220; --><p><span class="quote leftQuote">&#8220;</span><span class="quote quoteRight">&#8221;</span>Sed ut perspiciatis unde omste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
 				<cite><span class="red">Lynda May</span> Manager</cite>
 			</blockquote>
 		</div>
@@ -212,60 +214,67 @@
 		<button>purchase</button>
 	</section>
 	<section class="blog ">
-		<header class="blogHeader wrapperBottomHalf">
-			<h2 class="heading"><span class="blackBold">Our</span> Blog</h2>
-		</header>
-		<div class="blogGallery wrapperBottomHalf">
-			<div class="fourSmallImg">
-				<div class="blogSmallImg blogImg1">
-					<figure>
-						<img src="Assets/images/03.jpg" alt="">
-					</figure>
-					<figcaption>
-						<p><i class="fa fa-clock-o"></i><time>Dec 17</time></p>
-						<p><i class="fa fa-heart-o"></i> 18 Likes</p>
-					</figcaption>
+		<div class="overlay">
+			<header class="blogHeader wrapperBottomHalf">
+				<h2 class="heading"><span class="blackBold">Our</span> Blog</h2>
+			</header>
+			<div class="blogGallery wrapperBottomHalf">
+				<div class="fourSmallImg">
+					<div class="blogSmallImg blogImg1">
+						<figure>
+							<img src="Assets/images/03.jpg" alt="">
+						</figure>
+						<figcaption>
+							<p><i class="fa fa-clock-o"></i><time>Dec 17</time></p>
+							<p><i class="fa fa-heart-o"></i> 18 Likes</p>
+						</figcaption>
+					</div>
+					<div class="blogSmallImg blogImg2">
+						<figure>
+							<img src="Assets/images/02.jpg" alt="">
+						</figure>
+						<figcaption>
+							<p><i class="fa fa-clock-o"></i><time>Dec 15</time></p>
+							<p><i class="fa fa-heart-o"></i>18 Likes</p>
+						</figcaption>
+					</div>
+					<div class="blogSmallImg blogImg3">
+						<figure>
+							<img src="Assets/images/3471198035_140162e0e6_z.jpg" alt="">
+						</figure>
+						<figcaption>
+							<p><i class="fa fa-clock-o"></i><time>Dec 8</time></p>
+							<p><i class="fa fa-heart-o"></i>26 likes</p>
+						</figcaption>
+					</div>
+					<div class="blogSmallImg blogImg4">
+						<figure>
+							<img src="Assets/images/09.jpg" alt="">
+						</figure>
+						<figcaption>
+							<p><i class="fa fa-clock-o"></i><time>Dec 7</time></p>
+							<p><i class="fa fa-heart-o"></i>19 Likes</p>
+						</figcaption>
+					</div>
 				</div>
-				<div class="blogSmallImg blogImg2">
+				<div class="blogLargeImg blogImg5">
 					<figure>
-						<img src="Assets/images/02.jpg" alt="">
+						<img src="Assets/images/blog-big.jpg" alt="">
 					</figure>
 					<figcaption>
-						<p><i class="fa fa-clock-o"></i><time>Dec 15</time></p>
-						<p><i class="fa fa-heart-o"></i>18 Likes</p>
+						<p><i class="fa fa-clock-o"></i><time>17 Dec 14</time></p>
+						<p><i class="fa fa-heart-o"></i>21 Likess</p>
+						<p><i class="fa fa-comment-o"></i>28 Comments</p>
 					</figcaption>
-				</div>
-				<div class="blogSmallImg blogImg3">
-					<figure>
-						<img src="Assets/images/3471198035_140162e0e6_z.jpg" alt="">
-					</figure>
-					<figcaption>
-						<p><i class="fa fa-clock-o"></i><time>Dec 8</time></p>
-						<p><i class="fa fa-heart-o"></i>26 likes</p>
-					</figcaption>
-				</div>
-				<div class="blogSmallImg blogImg4">
-					<figure>
-						<img src="Assets/images/09.jpg" alt="">
-					</figure>
-					<figcaption>
-						<p><i class="fa fa-clock-o"></i><time>Dec 7</time></p>
-						<p><i class="fa fa-heart-o"></i>19 Likes</p>
-					</figcaption>
+					<div class="figInfo">
+						<h3>Lorem ipsum dolor.</h3>
+						<p class="red">Adopting Charity</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nisi id eius?</p>
+					</div>
 				</div>
 			</div>
-			<div class="blogLargeImg blogImg5">
-				<figure>
-					<img src="Assets/images/blog-big.jpg" alt="">
-				</figure>
-				<figcaption>
-					<p><i class="fa fa-clock-o"></i><time>17 Dec 14</time></p>
-					<p><i class="fa fa-heart-o"></i>21 Likess</p>
-					<p><i class="fa fa-comment-o"></i>28 Comments</p>
-				</figcaption>
-			</div>
+			<button>All Posts</button>
 		</div>
-		<button>All Posts</button>
 	</section>
 	<section class="statusBar wrapperMax">
 		<div class="statusBarQuarter">
@@ -329,8 +338,10 @@
 			</ul>
 		</div>
 		<div class="infoPane infoPane3">
-			<h2>Wanna Be A <span class="red">Volunteer</span></h2>
-			<button>Join In</button>
+			<div class="overlay">
+				<h2>Wanna Be A <span class="red">Volunteer</span></h2>
+				<button>Join In</button>
+			</div>
 		</div>
 	</section>
 	<section class="getInTouch">
@@ -357,7 +368,7 @@
 					<input type="email">
 					<input class="website" type="text">
 				</div>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" id="" cols="30" rows="7"></textarea>
 				<input type="submit" value="Send">
 				
 			</form>

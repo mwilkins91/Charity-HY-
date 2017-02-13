@@ -90,15 +90,19 @@ section.urgentCause {
 		margin: 0 auto;
 		line-height: 3rem;
 	}
-	i {
+	.quote {
 		color: $brandRed;
 		position: absolute;
+		font-family: $fontSerif;
+		font-size: 6rem;
+		top: 10px;
+
 	}
-	i:first-child {
-		left: -10px;
+	.leftQuote {
+		left: -20px;
 	}
-	i:last-child {
-		right: -10px;
+	.quoteRight {
+		right: -20px;
 	}
 	cite {
 		margin-top: 2rem;

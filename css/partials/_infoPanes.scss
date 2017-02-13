@@ -96,10 +96,14 @@ section.threeInfoPanes {
 .infoPane3 {
 	background: url("../Assets/images/banner.jpg");
 	background-size: cover;
+	
+	.overlay {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding-bottom: 40px;
+	background: linear-gradient(to right, rgba(72, 92, 101, 0.6) 0%, rgba(102, 74, 71, 0.6) 100%);
+	}
 	h2 {
 		color: white;
 		font-family: $fontSkinny;
