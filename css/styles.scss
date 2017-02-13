@@ -8,103 +8,40 @@
 @import "partials/recentCauses";
 @import "partials/shame";
 @import "partials/blogSection";
+@import "partials/infoPanes";
 
-section.threeInfoPanes {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 80px;
-}
-.infoPane {
-	width: calc(33.333333333% - 25px);
-	text-align: center;
-	h2.heading {
-		margin-top: 0;
-		font-size: 2rem;
-		text-transform: capitalize;
-		.blackBold {
-			font-family: $fontSkinny;
-			font-weight: 800;
+section.getInTouch {
+
+	background: url('../Assets/images/GoogleMapimage.jpg');
+	background-size: cover;
+	.overlay {
+		background: rgba(255,255,255,0.8);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h2 {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	form {
+		display: flex;
+		.formLeft {
+			display: flex;
+			flex-direction: column;
+			
 		}
 	}
-	button{
-		color: grey;
-		border-color: grey;
+}
+
+.threeContactMethods {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-bottom: 40px;
+	width: 100%;
+	.contactMethod {
 		width: 100%;
 	}
 }
-.infoPane1 {
-	text-align: left;
-	ul {
-		list-style-type: circle;
-		list-style: none;
-		padding: 0 25px
-	}
-	li {
-		position: relative;
-		border-top: 1px solid lightgrey;
-		&:last-child {
-		border-bottom: 1px solid lightgrey;
-
-		}
-	}
-	li::before {
-		font-family: Fontawesome;
-		content: "\f10c";
-		color: $brandRed; 
-		position: absolute;
-		left: -20px;
-		top: 50%;
-		// transform: translateY(-50%);
-	}
-}
-.infoPane2 {
-	ul {
-		padding: 0;
-		list-style: none;
-	}
-	button {
-		position: relative;
-		padding: 8px 0px 8px 15px;
-		text-align: left;
-		font-size: 1rem;
-		&:after {
-			content: '>';
-			background: $brandRed;
-			position: absolute;
-			color: white;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			width: 30px;
-			padding: 6px 0;
-			font-size: 1.1rem;
-			text-align: center;
-		}
-	}
-}
-.infoPane3 {
-	background: url("../Assets/images/banner.jpg");
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding-bottom: 40px;
-	h2 {
-		color: white;
-		font-family: $fontSkinny;
-		font-size: 3rem;
-		text-transform: uppercase;
-		line-height: 2.8rem;
-		.red {
-			color: $brandRed;
-		}
-	}
-	button {
-		width: 50%;
-		color: white;
-		border-color: white;
-		align-self: center;
-	}
-}
-
 

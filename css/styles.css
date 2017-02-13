@@ -933,6 +933,7 @@ section.threeInfoPanes {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 80px;
+  min-height: 318px;
 }
 
 .infoPane {
@@ -982,7 +983,13 @@ section.threeInfoPanes {
   color: #D8382C;
   position: absolute;
   left: -20px;
-  top: 50%;
+  top: 35%;
+  font-size: 1rem;
+}
+
+.infoPane1 li p {
+  margin: 5px 0;
+  color: grey;
 }
 
 .infoPane2 ul {
@@ -995,10 +1002,10 @@ section.threeInfoPanes {
   padding: 8px 0px 8px 15px;
   text-align: left;
   font-size: 1rem;
+  margin: 5px 0;
 }
 
-.infoPane2 button:after {
-  content: '>';
+.infoPane2 button .accordianIcon {
   background: #D8382C;
   position: absolute;
   color: white;
@@ -1009,6 +1016,28 @@ section.threeInfoPanes {
   padding: 6px 0;
   font-size: 1.1rem;
   text-align: center;
+}
+
+.infoPane2 button .accordianIcon i {
+  display: block;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.infoPane p {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.accordianItem p {
+  display: none;
+}
+
+.accordianItem p.active {
+  display: block;
 }
 
 .infoPane3 {
@@ -1045,4 +1074,58 @@ section.threeInfoPanes {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+}
+
+section.getInTouch {
+  background: url("../Assets/images/GoogleMapimage.jpg");
+  background-size: cover;
+}
+
+section.getInTouch .overlay {
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.getInTouch h2 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+section.getInTouch form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.getInTouch form .formLeft {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.threeContactMethods {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.threeContactMethods .contactMethod {
+  width: 100%;
 }
