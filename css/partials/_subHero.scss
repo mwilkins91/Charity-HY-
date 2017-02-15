@@ -1,8 +1,11 @@
 section.subHeaderBoxes {
-	display: flex;
-	@media all and (max-width: 768px){
-	flex-direction: column;
-	align-items: center;
+	background: linear-gradient(to right, darken(rgba(51, 158, 212, 1), 40) 0%, darken(rgba(216, 56, 44, 1), 40) 100%);
+	.wrapperMax{
+		display: flex;
+		@media all and (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	.colouredBox {
 		width: 33.333333%;

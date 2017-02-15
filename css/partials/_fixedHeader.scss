@@ -21,7 +21,7 @@ header.fixedHeader {
 		padding: 0;
 		margin: 0;
 		position: fixed;
-		top: 50%;
+		top: 20%;
 		transition: left 0.5s ease-out;
 		left: 0;
 		&.hidden {

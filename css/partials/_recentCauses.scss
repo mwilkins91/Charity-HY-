@@ -127,6 +127,9 @@ div.causeInfo {
 		color: grey;
 		border-color: grey;
 		margin-top: 20px;
+		@media all and (max-width: 768px){
+			margin-bottom: 15px;
+		}
 	}
 }
 .money {
