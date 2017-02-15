@@ -32,6 +32,11 @@ section.threeInfoPanes {
 		color: grey;
 		border-color: grey;
 		width: 100%;
+		&:hover {
+			color: black;
+			background: white;
+			border-color: grey;
+		}
 	}
 }
 .infoPane1 {
@@ -96,7 +101,7 @@ section.threeInfoPanes {
 			padding: 6px 0;
 			font-size: 1.1rem;
 			text-align: center;
-			i {
+			span {
 				display: block;
 				transition: transform 0.5s;
 			}

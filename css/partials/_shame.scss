@@ -49,6 +49,11 @@
 		border-color: grey;
 		max-height: 35px;
 		align-self: center;
+		&:hover {
+			background: black;
+			color: white;
+			border-color: black;
+		}
 	}
 }
 

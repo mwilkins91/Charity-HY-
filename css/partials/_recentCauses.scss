@@ -105,12 +105,69 @@ div.causeInfo {
 	border: 1px solid lighten(lightgrey, 10);
 	border-top: none ;
 	text-align: center;
-	background-image: url("../Assets/bar.png");
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+	// background-image: url("../Assets/bar.png");
+	// background-position: top center;
+	// background-repeat: no-repeat;
+	// background-size: 100% auto;
 	position: relative;
+	.loadingBar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: left;
+		svg {
+			width: 0%;
+			background: #de3c2f;
+		}
+		svg.start {
+			animation-fill-mode: forwards; // Stay on the last frame
+			animation-iteration-count: 1; // Run only once
+			animation-timing-function: linear;
+		    animation-duration: 5s;
 
+		}
+	}
+	.loadingBar1 {
+		svg.start {
+		    // width: 100%;
+		    animation-name: draw1;
+		}
+		@keyframes draw1 {
+			0%{
+				width: 1%;
+			}
+			100% {
+				width: 65%;
+			}
+		}
+	}
+	.loadingBar2 {
+		svg.start {
+		    animation-name: draw2;
+		}
+		@keyframes draw2 {
+			0%{
+				width: 1%;
+			}
+			100% {
+				width: 44%;
+			}
+		}
+	}
+	.loadingBar3 {
+		svg.start {
+		    animation-name: draw3;
+		}
+		@keyframes draw3 {
+			0%{
+				width: 1%;
+			}
+			100% {
+				width: 93%;
+			}
+		}
+	}
 	p {
 		letter-spacing: 1px;
 		font-size: 1.2rem;
@@ -120,13 +177,18 @@ div.causeInfo {
 		font-size: 2.5rem;
 
 	}
-	p:first-child {
+	p.causeTitle {
 		padding: 20px 0 10px;
 	}
 	button {
 		color: grey;
 		border-color: grey;
 		margin-top: 20px;
+		&:hover {
+			background: black;
+			color: white;
+			border-color: black;
+		}
 		@media all and (max-width: 768px){
 			margin-bottom: 15px;
 		}
