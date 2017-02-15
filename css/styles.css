@@ -243,6 +243,7 @@ header.fixedHeader {
           justify-content: space-between;
   padding: 20px 25px;
   position: relative;
+  z-index: 100;
 }
 
 @media all and (max-width: 550px) {
@@ -259,26 +260,6 @@ header.fixedHeader {
   position: relative;
 }
 
-.navHamburger ul {
-  z-index: 900;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  top: 20%;
-  transition: left 0.5s ease-out;
-  left: 0;
-}
-
-.navHamburger ul.hidden {
-  left: -200px;
-}
-
-.navHamburger ul li {
-  padding: 10px;
-  background: white;
-}
-
 .navHamburger button {
   background: none;
   border: none;
@@ -290,12 +271,6 @@ header.fixedHeader {
           transform: translateY(-50%);
   margin-left: 10px;
   color: #4B4B4B;
-}
-
-@media all and (min-width: 550px) {
-  .navHamburger button {
-    display: none;
-  }
 }
 
 .logo {
@@ -350,6 +325,19 @@ header.fixedHeader {
 
 .navSocials ul li a {
   padding: 5px 10px;
+  color: #4B4B4B;
+}
+
+.navSocials ul li a:hover {
+  color: #9e8699;
+}
+
+.navSocials ul li:first-child a:hover {
+  color: #D8382C;
+}
+
+.navSocials ul li:last-child a:hover {
+  color: #339ED4;
 }
 
 .topOfPageHeader {
@@ -376,46 +364,99 @@ header.fixedHeader {
 }
 
 .topOfPageHeader .overlay {
+  position: relative;
   background: linear-gradient(to right, rgba(72, 92, 101, 0.6) 0%, rgba(102, 74, 71, 0.6) 100%);
 }
 
-nav.navTopOfPageStatic {
-  background: #323232;
-}
-
-@media all and (max-width: 550px) {
-  nav.navTopOfPageStatic {
-    display: none;
+@media all and (min-width: 550px) {
+  .topOfPageHeader .overlay {
+    top: -40px;
   }
 }
 
-nav.navTopOfPageStatic ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  padding: 0;
+@media all and (min-width: 550px) {
+  nav.navTopOfPageStatic {
+    background: #323232;
+    position: relative;
+    z-index: 50;
+    transition: all 1s;
+    top: 0;
+  }
+  nav.navTopOfPageStatic.hidden {
+    top: -50px;
+  }
+  nav.navTopOfPageStatic ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+  nav.navTopOfPageStatic ul li {
+    width: 100%;
+    border-right: 1px solid #4c4c4c;
+    padding: 5px 0;
+  }
+  nav.navTopOfPageStatic ul li:first-child {
+    border-left: 1px solid #4c4c4c;
+  }
+  nav.navTopOfPageStatic ul p, nav.navTopOfPageStatic ul a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: #323232 1px solid;
+    transition: all 1s;
+    display: inline-block;
+    width: 100%;
+  }
+  nav.navTopOfPageStatic ul p:hover, nav.navTopOfPageStatic ul a:hover {
+    border-bottom: white 1px solid;
+  }
 }
 
-nav.navTopOfPageStatic ul li {
-  width: 100%;
-  border-right: 1px solid #4c4c4c;
-  padding: 5px 0;
-}
-
-nav.navTopOfPageStatic ul li:first-child {
-  border-left: 1px solid #4c4c4c;
-}
-
-nav.navTopOfPageStatic ul p, nav.navTopOfPageStatic ul a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
+@media all and (max-width: 551px) {
+  nav.navTopOfPageStatic ul {
+    z-index: 900;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 20%;
+    transition: left 0.5s ease-out;
+    left: 0;
+  }
+  nav.navTopOfPageStatic ul.hidden {
+    left: -200px;
+  }
+  nav.navTopOfPageStatic ul li {
+    padding: 0;
+    background: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+  nav.navTopOfPageStatic ul li:hover {
+    background: black;
+  }
+  nav.navTopOfPageStatic ul li:hover a {
+    color: white;
+  }
+  nav.navTopOfPageStatic ul li p {
+    margin: 0;
+  }
+  nav.navTopOfPageStatic ul li a {
+    padding: 10px 15px;
+    width: 100%;
+    color: #4B4B4B;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+  }
 }
 
 .heroTitle {
@@ -771,6 +812,14 @@ section.urgentCause button:hover {
 
 .recentCauses nav ul li:first-child {
   width: 70%;
+}
+
+.recentCauses nav ul li a {
+  transition: all 0.5s;
+}
+
+.recentCauses nav ul li a:hover {
+  color: #D8382C;
 }
 
 .recentCauses h2 {

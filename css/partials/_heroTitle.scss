@@ -15,38 +15,96 @@
 		height: 100vh;
 	}
 	.overlay {
+		position: relative;
 		background: linear-gradient(to right, rgba(72, 92, 101, 0.6) 0%, rgba(102, 74, 71, 0.6) 100%);
+		@media all and (min-width: 550px){
+			top: -40px;
+		}
 	}
 }
-nav.navTopOfPageStatic {
-	background: $footerGrey;
-	// position: relative;
-	@media all and (max-width: 550px){
-		display: none;
-	}
-	ul{
-		display: flex;
-		justify-content: space-between;
-		list-style: none;
-		padding: 0;
-		li {
-			width: 100%;
-			border-right: 1px solid lighten($footerGrey, 10);
-			padding: 5px 0;
+@media all and (min-width: 550px){
+	nav.navTopOfPageStatic {
+		background: $footerGrey;
+		position: relative;
+		z-index: 50;
+		transition: all 1s;
+		top: 0;
+		&.hidden {
+			top: -50px;
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			padding: 0;
+			li {
+				width: 100%;
+				border-right: 1px solid lighten($footerGrey, 10);
+				padding: 5px 0;
 
-			&:first-child {
-			border-left: 1px solid lighten($footerGrey, 10);
+				&:first-child {
+				border-left: 1px solid lighten($footerGrey, 10);
+				}
+			}
+			p, a {
+				color: white;
+				text-decoration: none;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				text-align: center;
+				border-bottom: $footerGrey 1px solid;
+				transition: all 1s;
+				display: inline-block;
+				width: 100%;
+				&:hover {
+					border-bottom: white 1px solid;
+				}
 			}
 		}
-		p, a {
-			color: white;
-			text-decoration: none;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-			text-align: center;
+	}
+}
+@media all and (max-width: 551px){
+	nav.navTopOfPageStatic{
+		ul {
+			z-index: 900;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: fixed;
+			top: 20%;
+			transition: left 0.5s ease-out;
+			left: 0;
+			&.hidden {
+				left: -200px;
+			}
+			li {
+				padding: 0;
+				background: white;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				padding: 10px;
+				&:hover {
+					background: black;
+					a {
+						color: white;
+					}
+				}
+				p{
+					margin: 0;
+				}
+				 a{
+				 	padding: 10px 15px;
+					width: 100%;
+					color: $softBlack;
+					text-decoration: none;
+					font-family: $fontThick;
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 }
+
 
 .heroTitle {
 	position: absolute;

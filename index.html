@@ -12,27 +12,7 @@
 <body>
 	<header class="fixedHeader">
 		<nav class="navHamburger">
-		<button class="menuToggle"><i class="fa fa-bars"></i></button>
-			<ul class="hidden">
-				<li>
-					<p><a href="">Main</a></p>
-				</li>
-				<li>
-					<p><a href="">Causes</a></p>
-				</li>
-				<li>
-					<p><a href="">Events</a></p>
-				</li>
-				<li>
-					<p><a href="">Blog</a></p>
-				</li>
-				<li>
-					<p><a href="">Pages</a></p>
-				</li>
-				<li>
-					<p><a href="">Contact</a></p>
-				</li>
-			</ul>
+			<button class="menuToggle"><i class="fa fa-bars"></i></button>
 		</nav>
 		<h1 class="logo"><span>Mercy</span><span class="logoHeartImg"></span>Heart</h1> <!-- Logo goes here -->
 		<nav class="navSocials">
@@ -49,26 +29,26 @@
 			</ul>
 		</nav>
 	</header>
-	<header class="topOfPageHeader">
+	<header id="topID" class="topOfPageHeader">
 		<nav class="navTopOfPageStatic">
-			<ul class="wrapper">
+			<ul class="wrapper hidden">
 				<li>
-					<p><a href="">Main</a></p>
+					<p><a href="#topID">Main</a></p>
 				</li>
 				<li>
-					<p><a href="">Causes</a></p>
+					<p><a href="#causesID">Causes</a></p>
 				</li>
 				<li>
-					<p><a href="">Events</a></p>
+					<p><a href="#eventsID">Events</a></p>
 				</li>
 				<li>
-					<p><a href="">Blog</a></p>
+					<p><a href="#blogID">Blog</a></p>
 				</li>
 				<li>
-					<p><a href="">Pages</a></p>
+					<p><a href="#pagesID">Pages</a></p>
 				</li>
 				<li>
-					<p><a href="">Contact</a></p>
+					<p><a href="#contactID">Contact</a></p>
 				</li>
 			</ul><!-- black grey nav at top of page goes here -->
 		</nav>
@@ -105,7 +85,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="urgentCause">
+	<section id="eventsID" class="urgentCause">
 		<div class="overlay">
 			<div class="topGraph wrapper">
 				<h2><span class="blackBold">Most</span> Urgent Cause</h2>
@@ -135,7 +115,7 @@
 			</blockquote>
 		</div>
 	</section>
-	<section class="recentCauses">
+	<section id="causesID" class="recentCauses">
 		<header class="recentCauses wrapperBottomHalf">
 			<h2 class="heading"><span class="blackBold">Recent</span> Causes</h2>
 			<nav>
@@ -248,7 +228,7 @@
 		<p><span class="bigRed">Like this theme?</span> Get your copy of this great theme now!</p>
 		<button>purchase</button>
 	</section>
-	<section class="blog ">
+	<section id="blogID" class="blog">
 		<div class="overlay">
 			<header class="blogHeader wrapperBottomHalf">
 				<h2 class="heading"><span class="blackBold">Our</span> Blog</h2>
@@ -335,7 +315,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="threeInfoPanes wrapperBottomHalf">
+	<section id="pagesID" class="threeInfoPanes wrapperBottomHalf">
 		<div class="infoPane infoPane1">
 			<h2 class="heading"><span class="blackBold">What</span> We Do?</h2>
 			<p class="listPreamble">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet..</p>
@@ -384,7 +364,7 @@
 	<section class="getInTouch">
 		<div class="overlay">
 			<h2 class="heading wrapperBottomHalf"><span class="blackBold">Get</span> In Touch</h2>
-			<div class="threeContactMethods wrapperBottomHalf">
+			<div id="contactID" class="threeContactMethods wrapperBottomHalf">
 				<div class="contactMethod contactMethod1">
 					<img src="Assets/phone.png" alt="">
 					<p>Phone: 8 (800) 695-2684</p>

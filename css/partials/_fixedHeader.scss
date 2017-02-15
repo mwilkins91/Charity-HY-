@@ -4,6 +4,7 @@ header.fixedHeader {
 	justify-content: space-between;
 	padding: 20px 25px;
 	position: relative;
+	z-index: 100;
 	@media all and (max-width: 550px){
 		padding: 10px;
 		position: fixed;
@@ -15,23 +16,6 @@ header.fixedHeader {
 }
 .navHamburger {
 	position: relative;
-	ul {
-		z-index: 900;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		position: fixed;
-		top: 20%;
-		transition: left 0.5s ease-out;
-		left: 0;
-		&.hidden {
-			left: -200px;
-		}
-		li {
-			padding: 10px;
-			background: white;
-		}
-	}
 	button {
 		background: none;
 		border: none;
@@ -41,9 +25,9 @@ header.fixedHeader {
 		transform: translateY(-50%);
 		margin-left: 10px;
 		color: $softBlack;
-		@media all and (min-width: 550px){
-			display: none;
-		}
+		// @media all and (min-width: 550px){
+		// 	display: none;
+		// }
 	}
 }
 // .fixedHeader:hover .navHamburger ul {
@@ -87,5 +71,16 @@ header.fixedHeader {
 	padding: 0;
 	li a{
 		padding: 5px 10px;
+		color: $softBlack;
+		&:hover {
+			color: lighten($brandMixed, 10);
+		}
 	}
+	li:first-child a:hover{
+		color: $brandRed;
+	}
+	li:last-child a:hover{
+		color: $brandBlue;
+	}
+
 }
